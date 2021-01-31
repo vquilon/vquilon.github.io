@@ -1,0 +1,24 @@
+#
+# This file contains configuration flags to customize your site orriding defaults
+#
+
+# --- Basic options --- #
+# Name of your site (displayed in the header)
+title: VQuilon Portfolio (Dev Mode)
+name: VQuilon Portfolio (Dev Mode)
+
+# --- Logo --- #
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+# avatar: /assets/img/iyi_b_v2.png
+# round-avatar: true
+
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter
+#title-img: /assets/img/iyi_b_v2.png
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed

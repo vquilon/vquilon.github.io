@@ -1,0 +1,15 @@
+- name: Adobe Photoshop
+  percentage: 95
+  color: info
+
+- name: Wordpress
+  percentage: 50
+  color: info
+
+- name: MongoDB
+  percentage: 75
+  color: success
+
+- name: Elasticsearch
+  percentage: 75
+  color: success

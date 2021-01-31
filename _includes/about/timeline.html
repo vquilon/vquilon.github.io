@@ -1,0 +1,20 @@
+<div class="col mt-4">
+  <div class="timeline-body">
+    {% for item in site.data.timeline %}
+      {%- assign tags = item.tags | split: ',' -%}
+      <div class="timeline-item">
+        <div class="content">
+          <h2 class="{{ type }}">{{ item.title }}</h2>
+          <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
+          {%- for tag in tags -%}
+            <span class="badge badge-pill text-primary border border-primary ml-1">{{ tag }}</span>
+          {%- endfor -%}
+          <p>{{ item.company }}</p>
+          <p>{{ item.institution }}</p>
+          <p>{{ item.location }}</p>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

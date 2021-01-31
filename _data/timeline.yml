@@ -1,0 +1,75 @@
+- title: Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación
+  tags: telecomunicaciones,ingenieria
+  type: bachelor
+  company: Universidad Politécnica de Madrid
+  institution: Escuela Técnica Superior de Ingenieros de Telecomunicación
+  location: Madrid, España
+  from: 2012
+  to: 2018
+  description:
+
+- title: Máster Universitario en Ingeniería de Redes y Servicios Telemáticos
+  tags: telecomunicaciones,ingenieria
+  type: master
+  company: Universidad Politécnica de Madrid
+  institution: Escuela Técnica Superior de Ingenieros de Telecomunicación
+  location: Madrid, España
+  from: 2018
+  to: 2019
+  description:
+
+- title: Apoyo técnico e informático al desarrollo de acciones de promoción institucional de la ETSIT
+  tags: desarrollo web,diseño,photoshop,wordpress
+  type: intern
+  company: Universidad Politécnica de Madrid
+  institution: Escuela Técnica Superior de Ingenieros de Telecomunicación
+  location: Madrid, España
+  from: 2017/09
+  to: 2018/01
+  description: Desarrollo de páginas utilizando WordPress,
+              creación de carteles de carácter promocional y generación de plantillas Word y PPT.
+              Apoyo en generación de aspectos visuales y de diseño gráfico. Uso de tecnologías 
+              web como JavaScript, HTML y CSS. Todo enfocado a la promoción institucional de la ETSIT.
+
+- title: Desarrollador de infraestructuras (CLOUD) para virtualizacion de funciones de red (OpenStack)
+  tags: openstack,devstack,linux,docker
+  type: intern
+  company: Universidad Politécnica de Madrid
+  institution: Escuela Técnica Superior de Ingenieros de Telecomunicación
+  location: Madrid, España
+  from: 2018/10
+  to: 2018/12
+  description: Instalación y creación de nodos de computación que dan soporte a 
+              las funciones de red creadas mediante OpenStack, para la realización de 
+              servicios basados en la nube. Despliegue de la infraestructura mediante 
+              herramientas de automatización (Ansible, Docker y generación de scripts). 
+              Enmarcado en el proyecto de IE "Retos Educativos para la Integración de 
+              competencias profesionales de CLOUD computing y virtualización en enseñanzas 
+              de grado y master" (REICLOUD).
+
+- title: Analista de requisitos y desarrollador APEX (JAVA) en la plataforma CRM nº1 en el mundo
+  tags: crm,javascript,apex,java
+  type: intern
+  company: Universidad Politécnica de Madrid
+  institution: Escuela Técnica Superior de Ingenieros de Telecomunicación
+  location: Madrid, España
+  from: 2018/02
+  to: 2019/01
+  description: Análisis de requisitos de negocio para la transformación en requisitos funcionales. 
+              Las tareas en el proyecto subvencionado por AECID y liderado por la 
+              Fundación Acciona Microenergía tratan del desarrollo en APEX (JAVA) 
+              en la plataforma CRM nº1 en el mundo del sistema de datos el cual dará 
+              soporte a un servicio de energías renovables para comunidades aisladas 
+              del río Napo en la Amazonía peruana.
+
+- title: Ingeniero de software en Big Data e Inteligencia Artificial (NLP)
+  tags: big data,ai,nlp,python,spark,yarn,hadoop,cloudera,scala
+  type: work
+  company: Indra
+  institution: Escuela Técnica Superior de Ingenieros de Telecomunicación
+  location: Zaragoza, España
+  from: 2019/09
+  to: actualidad
+  description: Desarrollo de software de análisis de documentos de texto extensos 
+              mediante técnicas de Inteligencia Artificial (NLP) sobre arquitecturas 
+              de software en entornos de Big Data (Spark, Yarn, Cloudera).
