@@ -113,14 +113,19 @@ collections:
 
     
 # --- Comments --- #
+### Disqus ###
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 # disqus: ""
 
-### Disqus ###
 # disqus:
 #   shortname: your-short-name-disqus                     # Your website Shortname on disqus
+
+### Firebase ###
+# https://www.smashingmagazine.com/2020/08/comment-system-firebase/
+
+
 
 
 # --- Web Statistics Section --- #
