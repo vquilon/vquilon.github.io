@@ -33,10 +33,10 @@ function update_topics(repo) {
 }
 
 function update_projects_info(repo) {
-  get_social_image(repo).then((data) => {
-    let url_img = data.data.repository.openGraphImageUrl;
-    console.log(url_img);
-  });
+  // get_social_image(repo).then((data) => {
+  //   let url_img = data.data.repository.openGraphImageUrl;
+  //   console.log(url_img);
+  // });
 
   // repo = user/repo == full_name
   let user = repo.split("/")[0];
@@ -63,32 +63,31 @@ async function read_rest_api(repo, endpoint) {
   if(endpoint !== "") {
     final_endpoint=`${endpoint}`;
   }
-  return await fetch(`https://api.github.com/repos/${final_endpoint}`, {
-    headers: {
-      Accept: "application/vnd.github.mercy-preview+json"
-    }
-  }).then(
-    response => response.json()
-  ).then(data => {
-    return data;
-  });
+  headers= {
+    "Accept": "application/vnd.github.mercy-preview+json"
+  };
+  return await make_fetch(uri=`https://api.github.com/repos/${final_endpoint}`, query=query, headers=headers);
 }
 
 async function read_graphql_api(query, variables) {
   // communicating with the /graphql endpoint with fetch()
-  const authorId = 'vquilon';
-  query = {
+  let query = {
     query: query, 
     variables: variables
-  }
-  return await fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-      // TODO: Parametrizar el token en la base de datos firebase
-      'Authorization': 'bearer 995e3e28abca1daae7f65b51160a61c8de42f5ef'
-    },
+  };
+  let headers= {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    // TODO: Parametrizar el token en la base de datos firebase
+    'Authorization': 'bearer 995e3e28abca1daae7f65b51160a61c8de42f5ef'
+  };
+  return await make_fetch('https://api.github.com/graphql', 'POST', query, headers);
+}
+
+async function make_fetch(uri, method='GET', query={}, headers={}) {
+  return await fetch(uri, {
+    method: method,
+    headers: headers,
     body: JSON.stringify(query)
   }).then(
     r => r.json()

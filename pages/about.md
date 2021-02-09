@@ -8,7 +8,7 @@ weight: 1
 # **Sobre mi**
 
 Hola, soy **{{ site.author.name }}** :wave:,<br>
-soy un desarrollador autodidacta y creativo que ofrece un punto de vista diferente para obtener los resultados óptimos. Con energía y ganas de adquirir experiencia y nuevos conocimientos que satisfagan mis inquietudes en las Tecnologías de la Información. Además, quiero demostrar mi capacidad para trabajar en equipo adaptándome con intuición y esfuerzo. 
+Soy un desarrollador autodidacta y creativo que ofrece un punto de vista diferente para obtener los resultados óptimos. Con energía y ganas de adquirir experiencia y nuevos conocimientos que satisfagan mis inquietudes en las Tecnologías de la Información. Además, quiero demostrar mi capacidad para trabajar en equipo adaptándome con intuición y esfuerzo. 
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

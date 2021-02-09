@@ -21,12 +21,10 @@
 ### Site Settings ###
 title               : VQuilonR Portfolio
 name                : VQuilonR Portfolio
-description         : >-  # this means to ignore newlines until "baseurl:"
+description         : # >-this means to ignore newlines until "baseurl:"
                       Entusiasta de la vida y Tecnófilo a ratos.
                       Desarrollador en Big DATA e Inteligencia Artificial.
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
+                      Impulsando el procesamiento del lengauaje natural en español con ayuda de un :coffee:.
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -115,14 +113,19 @@ collections:
 
     
 # --- Comments --- #
+### Disqus ###
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 # disqus: ""
 
-### Disqus ###
 # disqus:
 #   shortname: your-short-name-disqus                     # Your website Shortname on disqus
+
+### Firebase ###
+# https://www.smashingmagazine.com/2020/08/comment-system-firebase/
+
+
 
 
 # --- Web Statistics Section --- #
