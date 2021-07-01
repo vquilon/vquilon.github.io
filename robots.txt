@@ -3,8 +3,4 @@ permalink: /robots.txt
 ---
 User-agent: *
 
-<<<<<<< HEAD
 Sitemap: {{site.url}}{{site.baseurl}}/siteindex.xml
-=======
-Sitemap: {{site.url}}{{site.baseurl}}/siteindex.xml
->>>>>>> 2050d478b2592707a30b2d5b1980d759916e48c1
