@@ -32,7 +32,7 @@ description         : # >-this means to ignore newlines until "baseurl:"
 # then add in the baseurl here, like this: "/repository-name"
 baseurl             : "" # the subpath of your site, e.g. /blog
 # baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vquilon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository          : vquilon/vquilon.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 # remote_theme        : YoussefRaafatNasry/portfolYOU
 
