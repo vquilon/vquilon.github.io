@@ -1,0 +1,55 @@
+<!-- Remote Projects JS -->
+<script src="{{ '/assets/js/remote-projects.js' | relative_url }}"></script>
+
+<div class="card-columns m-3 mt-5">
+
+  <!-- Remote Projects -->
+  {% for remote_surprise in page.remote_surprise %}
+
+    {%- for repo in site.github.public_repositories -%}
+      {%- if remote_surprise == repo.name -%}
+        {%- assign surprise = repo -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- assign words = surprise.name | split: '-' -%}
+    {%- capture titlecase -%}
+      {%- for word in words -%}
+        {{ word | capitalize | append: ' ' }}
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    {%- assign surprise_type = "remote" -%}
+    {%- assign surprise_id   = surprise.name -%}
+    {%- assign surprise_img  = page.info_surprise[remote_surprise].image -%}
+    {%- assign surprise_name = titlecase | strip -%}
+    {%- assign surprise_desc = surprise.description -%}
+    {%- assign surprise_url  = surprise.html_url -%}
+
+    {% include surprise/surprise-card.html %}
+
+    <script>update_projects_info("{{ site.github.owner_name }}/{{ remote_surprise }}")</script>
+
+  {% endfor %}
+
+  <!-- Local Linked -->
+  {% for surprise in site.surprise %}
+
+    {%- assign surprise_type  = "local" -%}
+    {%- assign surprise_id    = surprise.name | slugify -%}
+    {%- assign surprise_img   = surprise.image -%}
+    {%- assign surprise_name  = surprise.name -%}
+    {%- assign surprise_desc  = surprise.description -%}
+    {%- assign surprise_tools = surprise.tools -%}
+
+    {%- if surprise.external_url -%}
+      {%- assign surprise_url = surprise.external_url -%}
+    {%- else -%}
+      {%- assign surprise_url = surprise.url | relative_url -%}
+    {%- endif -%}
+
+    {% include surprise/surprise-card.html %}
+
+  {% endfor %}
+
+</div>

@@ -61,12 +61,17 @@ nav_exclude:                                            # The following paths ar
   - pages/404.html
   - pages/index.md
   - documentation/partials/**                           # For Documentation Only
+  - pages_surprise/**
 
+surprise_nav_exclude:
+  - pages/**
+  - pages_surprise/surprise.html
+  - pages_surprise/boxes/**
 
 ### Author Info ###
 bundauthor: Víctor Quilón Ranera
 author:
-  name              : Vìctor Quilón Ranera
+  name              : Víctor Quilón Ranera
   image             : https://avatars.githubusercontent.com/u/17545846?s=460&u=718c63407520e5308879bef85416412e3c2d6b36&v=4
 # behance           : your_username
 # dribbble          : your_username
@@ -89,6 +94,14 @@ author:
 # keybase           : your_username
 
 
+surprise_conf:
+  title             : Sorpresa!
+  description       : Hola mi chica, se que te vas a negar, pero porfavor echale un ojo
+  author            : MORENAZO
+  birthday_girl     : RUBIA
+  image             : /assets/surprise/img/main.jpg
+
+
 # --- Misc --- #
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
@@ -109,9 +122,11 @@ collections:
     permalink: /projects/:name
   elements:                                             # For Documentation Only
     output: true                                        # For Documentation Only
+  surprise:
+      output: true
+      permalink: /surprise/:name
 
 
-    
 # --- Comments --- #
 ### Disqus ###
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -124,8 +139,6 @@ collections:
 
 ### Firebase ###
 # https://www.smashingmagazine.com/2020/08/comment-system-firebase/
-
-
 
 
 # --- Web Statistics Section --- #
@@ -154,6 +167,10 @@ defaults:
       type: "posts"
     values:
       comments: false                                   # Set to true to enable disqus comments
+  - scope:
+      path: "pages_surprise/**"
+    values:
+      sitemap: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.

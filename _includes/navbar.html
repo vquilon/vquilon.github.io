@@ -12,8 +12,7 @@
       {%- assign html_pages = site.html_pages | sort: 'weight' -%}
       {%- assign filtered_pages = "" | split: "" -%}
 
-      {%- for html_page in html_pages -%} 
-
+      {%- for html_page in html_pages -%}
         {%- assign exclude = false -%}
 
         {%- for exclude_path in site.nav_exclude -%}
