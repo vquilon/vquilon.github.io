@@ -1,7 +1,7 @@
 ---
-name: Caja sorpresa 'S'
-tools: [S, sorpresa]
-image: https://www.sketchappsources.com/resources/source-image/coo-app-concept-subgaurav.jpg
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+name: Caja "Mundo al reves"
+tools: [S, sorpresa, white]
+image: /assets/surprise/img/box_s5.jpg
+description: Ahh sii echa un vistazo a estas cajas y escogee una que te gustara!! y es algo que nos encantara rascarr jejeje
 
 ---

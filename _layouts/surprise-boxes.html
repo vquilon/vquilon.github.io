@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-100">
+
+{% include surprise/head_surprise.html %}
+<link rel="stylesheet" href="{{ '/assets/surprise.css' | relative_url }}" type="text/css">
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  {% include surprise/navbar_surprise.html %}
+  {{ content }}
+  </main>
+
+  {% include surprise/footer_surprise.html %}
+  {% include scripts.html %}
+
+</body>
+
+</html>

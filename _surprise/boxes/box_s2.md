@@ -1,7 +1,7 @@
 ---
-name: Caja sorpresa 'S'
-tools: [S, sorpresa]
-image: https://www.sketchappsources.com/resources/source-image/coo-app-concept-subgaurav.jpg
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+name: Caja "Leon tumba chunga"
+tools: [S, sorpresa, white, zzz]
+image: /assets/surprise/img/box_s2.jpg
+description: Zzz Zzz, eh!, ah si feliz cumpleaaañooos mi mamii rubita.
 
 ---

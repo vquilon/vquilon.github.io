@@ -1,7 +1,7 @@
 ---
-name: Caja sorpresa 'S'
-tools: [S, sorpresa]
+name: Caja "Pillados infraganti"
+tools: [S, sorpresa, infraganti, black, white]
 image: /assets/surprise/img/box_s1.jpg
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: Holi, somos novios y te deseamos un feliiiiiz cumpleañooos!
 
 ---

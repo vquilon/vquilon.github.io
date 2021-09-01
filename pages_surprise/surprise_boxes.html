@@ -3,5 +3,26 @@ layout: surprise
 title: Cajas secretas
 permalink: /surprise/boxes/
 ---
-
+<link rel="stylesheet" href="{{ '/assets/css/surprise.css' | relative_url }}" type="text/css">
 {% include surprise/index.html %}
+
+<script type="text/javascript">
+	window.onload = function () {
+		let toogleWrap = function (event) {
+			event.currentTarget.classList.toggle("unwrapped");
+			event.currentTarget.parentNode.classList.add("unwrapped");
+	    	event.currentTarget.removeEventListener("click", toogleWrap, false);
+	    	var elm = event.currentTarget.querySelector("a.card");
+	    	let addUnwrapped = function() {
+	    		elm.classList.add("unwrapped");
+	    	}
+	    	setTimeout(addUnwrapped, 2000);
+	    	
+
+	  	};
+
+		document.querySelectorAll(".ribbon").forEach(function(el) {
+	  		el.addEventListener("click", toogleWrap, false);
+		});
+	}
+</script>

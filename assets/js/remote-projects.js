@@ -71,7 +71,7 @@ async function read_rest_api(repo, endpoint) {
 
 async function read_graphql_api(query, variables) {
   // communicating with the /graphql endpoint with fetch()
-  let query = {
+  let nquery = {
     query: query, 
     variables: variables
   };
@@ -81,7 +81,7 @@ async function read_graphql_api(query, variables) {
     // TODO: Parametrizar el token en la base de datos firebase
     'Authorization': 'bearer 995e3e28abca1daae7f65b51160a61c8de42f5ef'
   };
-  return await make_fetch('https://api.github.com/graphql', 'POST', query, headers);
+  return await make_fetch('https://api.github.com/graphql', 'POST', nquery, headers);
 }
 
 async function make_fetch(uri, method='GET', query={}, headers={}) {

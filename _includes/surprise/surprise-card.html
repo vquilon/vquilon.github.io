@@ -1,21 +1,31 @@
-<div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ surprise_url }}" class="project card text-dark">
-    {%- if surprise_img -%}
-    <img id="{{ surprise_id }}-img" class="card-img-top" src="{{ surprise_img }}" alt="{{ surprise_name }}" />
-    {%- endif -%}
-    <div class="card-body">
-      <h5 id="{{ surprise_id }}-name" class="card-title">
-          {%- if surprise_type == "remote" -%}
-          <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
-          {%- endif -%}
-        {{ surprise_name }}
-      </h5>
-      <p id="{{ surprise_id }}-desc" class="card-text">{{ surprise_desc }}</p>
-      <p id="{{ surprise_id }}-tools" class="card-text">
-        {%- for tool in surprise_tools -%}
-        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
-        {%- endfor -%}
-      </p>
+<div class="card-container wow animated fadeIn" data-wow-delay=".15s">
+  <div class="ribbon">
+    <div class="giftwrap">
+  
+      <a href="{{ surprise_url }}" class="project card text-dark">
+        {%- if surprise_img -%}
+          <img id="{{ surprise_id }}-img" class="card-img-top" src="{{ surprise_img }}" alt="{{ surprise_name }}" />
+        {%- endif -%}
+        <div class="card-body">
+          <h5 id="{{ surprise_id }}-name" class="card-title">
+              {%- if surprise_type == "remote" -%}
+              <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
+              {%- endif -%}
+            {{ surprise_name }}
+          </h5>
+          <p id="{{ surprise_id }}-desc" class="card-text">{{ surprise_desc }}</p>
+          <p id="{{ surprise_id }}-tools" class="card-text">
+            {%- for tool in surprise_tools -%}
+            <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+            {%- endfor -%}
+          </p>
+        </div>
+      </a>
+
     </div>
-  </a>
+      <div class="bow">
+        <i class="fa fa-bookmark"></i>
+        <i class="fa fa-bookmark"></i>
+    </div>
+  </div>
 </div>
