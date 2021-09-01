@@ -65,7 +65,6 @@ nav_exclude:                                            # The following paths ar
 
 surprise_nav_exclude:
   - pages/**
-  - pages_surprise/surprise.html
   - pages_surprise/boxes/**
 
 ### Author Info ###

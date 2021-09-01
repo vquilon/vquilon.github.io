@@ -1,7 +1,7 @@
 ---
-name: Caja sorpresa 'C'
-tools: [C, sorpresa]
-image: https://www.sketchappsources.com/resources/source-image/coo-app-concept-subgaurav.jpg
+name: Caja sorpresa 'S'
+tools: [S, sorpresa]
+image: /assets/surprise/img/box_s1.jpg
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ---
