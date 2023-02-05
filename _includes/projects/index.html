@@ -24,7 +24,12 @@
     {%- assign project_img  = page.info_projects[remote_project].image -%}
     {%- assign project_name = titlecase | strip -%}
     {%- assign project_desc = project.description -%}
-    {%- assign project_url  = project.html_url -%}
+    {%- if page.info_projects[remote_project].url -%}
+      {%- assign project_url  = page.info_projects[remote_project].url -%}
+    {%- else -%}
+      {%- assign project_url  = project.html_url -%}
+    {%- endif -%}
+
 
     {% include projects/project-card.html %}
 

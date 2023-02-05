@@ -1,0 +1,42 @@
+{%- comment -%} Default Styles {%- endcomment -%}
+{%- assign card_style  = '' -%}
+{%- assign text_style  = 'text-dark' -%}
+{%- assign badge_style = 'badge-dark' -%}
+
+{%- comment -%} Update Styles {%- endcomment -%}
+{%- if tool.style == 'fill' -%}
+  {%- assign card_style = tool.color | prepend: 'bg-' -%}
+  {%- if tool.color != 'light' -%}
+    {%- assign text_style  = 'text-white' -%}
+    {%- assign badge_style = 'badge-light text-' -%}
+    {%- assign badge_style = badge_style | append: tool.color -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign card_style = tool.color | prepend: 'border border-' -%}
+  {%- if tool.color -%}
+    {%- assign badge_style =  tool.color | prepend: 'badge-' -%}
+  {%- endif -%}
+{%- endif -%}
+    
+<div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ tool_url }}" class="post card {{ card_style }}">
+    <div class="card-body {{ text_style }}">
+      <h3 class="card-title">{{ tool.title }}</h3>
+      <p class="card-text">
+        {% for tag in tool.tags %}
+        <span class="badge {{ badge_style }}">{{ tag }}</span>
+        {% endfor %}
+      </p>
+      <p class="card-text">
+        {%- if tool.description -%}
+        {{ tool.description }}
+        {%- else -%}
+        {{ tool.content | truncatewords: 25, "<small><i>  read more...</i></small>" }}
+        {%- endif -%}
+      </p>
+    </div>
+    <div class="card-footer {{ text_style }}">
+      {{ tool.date | date_to_long_string }}
+    </div>
+  </a>
+</div>

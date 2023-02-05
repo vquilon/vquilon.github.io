@@ -1,0 +1,16 @@
+<div class="card-group mt-2">
+
+  {% for tool in site.tools %}
+    {%- assign tool         = tool -%}
+
+    {%- comment -%} Determine Tool URL {%- endcomment -%}
+    {%- if tool.external_url -%}
+      {%- assign tool_url = tool.external_url -%}
+    {%- else -%}
+      {%- assign tool_url = tool.url | relative_url -%}
+    {%- endif -%}
+
+    {% include tools/tool-card.html %}
+  {% endfor %}
+  
+</div>

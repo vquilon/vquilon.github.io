@@ -61,11 +61,13 @@ nav_exclude:                                            # The following paths ar
   - pages/404.html
   - pages/index.md
   - documentation/partials/**                           # For Documentation Only
-  - pages_surprise/**
+  - pages/surprise/**
+  - pages/tools/tags.html
+  - pages/tools/**.html
 
 surprise_nav_exclude:
   - pages/**
-  - pages_surprise/boxes/**
+  - pages/surprise/boxes/**
 
 ### Author Info ###
 bundauthor: Víctor Quilón Ranera
@@ -122,8 +124,12 @@ collections:
   elements:                                             # For Documentation Only
     output: true                                        # For Documentation Only
   surprise:
-      output: true
-      permalink: /surprise/:name
+    output: true
+    permalink: /surprise/:name
+  tools:
+    output: true
+    permalink: /tools/:name
+
 
 
 # --- Comments --- #
@@ -167,9 +173,22 @@ defaults:
     values:
       comments: false                                   # Set to true to enable disqus comments
   - scope:
-      path: "pages_surprise/**"
+      path: "pages/surprise/**"
     values:
       sitemap: false
+      layout: "secret_box_amz"
+      permalink: /surprise/:name/
+  - scope:
+      path: "_surprise/**"
+    values:
+      sitemap: false
+  - scope:
+      path: ""
+      type: "tools"
+    values:                                  # Set to true to enable disqus comments
+      layout: "page"
+      title: :title
+      permalink: /tools/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -197,6 +216,9 @@ exclude:
   - LICENSE
   - CNAME
   - "*.log"
+  - _template_posts
+  - .history
+  - .vscode
 
 # Build settings
 theme: minima
