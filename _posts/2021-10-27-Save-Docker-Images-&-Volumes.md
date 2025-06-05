@@ -1,5 +1,16 @@
+---
+title: Save Docker Images & Volumes
+tags: [Docker, Containers, Backup, Restore]
+author: Víctor Quilón Ranera
+style: border
+color: primary
+description: Learn how to save and restore Docker images and volumes, including exporting and importing data containers and migrating Docker disk storage in WSL2.
+---
+
 # IMAGES
 Exportar todos los nombres de imagenes
+
+```bash
 REPOSITORY                                      TAG            IMAGE ID       CREATED         SIZE
 busybox                                         latest         cabb9f684f8b   3 hours ago     1.24MB
 	docker save cabb9f684f8b -o /path/to/save/somedockersimages.tar
@@ -23,6 +34,7 @@ docker.elastic.co/logstash/logstash             6.6.2          2cb65426c0b2   2 
 docker.elastic.co/kibana/kibana                 6.6.2          5f7d261cfc67   2 years ago     710MB
 docker.elastic.co/elasticsearch/elasticsearch   6.6.2          1bca39c5a102   2 years ago     842MB
 centos/systemd                                  latest         05d3c1e2d0c1   2 years ago     202MB
+```
 
 ```bash
 docker save cdfbbd32f686 -o E:/WORK/Indra/images/worker_spark_hadoop.tar

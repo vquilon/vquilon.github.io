@@ -1,3 +1,4 @@
+sudo apt-get update
 sudo apt-get install ruby-full build-essential zlib1g-dev
 
 mkdir -p ~/.gem/ruby/2.5.0
