@@ -1,0 +1,38 @@
+/* Estilos específicos para work */
+/* Timeline de Educación */
+.timeline-body.education:after {
+  background-color: #4285f4; /* Azul para educación */
+}
+.timeline-body.education .timeline-item:after {
+  border: 4px solid #4285f4;
+}
+
+/* Timeline de Trabajo */
+.timeline-body.work:after {
+  background-color: #fbbc05; /* Amarillo para trabajo */
+}
+.timeline-body.work .timeline-item:after {
+  border: 4px solid #fbbc05;
+}
+
+/* Tipos de Educación */
+.type-bachelor {
+  color: #34a853; /* Verde para Bachelor */
+}
+
+.type-master {
+  color: #4285f4; /* Azul para Master */
+}
+
+/* Tipos de Trabajo */
+.type-fulltime {
+  color: #ea4335; /* Rojo para Full-time */
+}
+
+.type-intern {
+  color: #fbbc05; /* Amarillo para Intern */
+}
+
+.type-freelance {
+  color: #a142f4; /* Morado para Freelance */
+}

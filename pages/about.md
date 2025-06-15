@@ -5,6 +5,8 @@ permalink: /about/
 weight: 1
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/timeline.css' | relative_url }}">
+
 # **Sobre mi**
 
 Hola, soy **{{ site.author.name }}** :wave:,<br>
