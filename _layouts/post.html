@@ -5,6 +5,14 @@ layout: page
 <h1><b>{{ page.title }}</b></h1>
 
 <p class="post-metadata text-muted">
+  {%- if page.authors != empty -%}
+    Authors: 
+    {% for author in page.authors %}
+    <span class="author badge badge-pill text-success border border-success">{{ author }}</span>
+    {% endfor %}
+    <br>
+  {%- endif -%}
+
   {{ page.date | date_to_long_string }} -  
   <b>
   {%- assign words = content | number_of_words -%}

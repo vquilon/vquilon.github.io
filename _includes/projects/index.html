@@ -20,14 +20,18 @@
     {%- endcapture -%}
 
     {%- assign project_type = "remote" -%}
-    {%- assign project_id   = project.name -%}
-    {%- assign project_img  = page.info_projects[remote_project].image -%}
-    {%- assign project_name = titlecase | strip -%}
-    {%- assign project_desc = project.description -%}
-    {%- if page.info_projects[remote_project].url -%}
-      {%- assign project_url  = page.info_projects[remote_project].url -%}
-    {%- else -%}
+    {%- assign project_id   = project.name | default: remote_project -%}
+    {%- assign project_img  = project.image | default: page.info_projects[remote_project].image -%}
+    {%- assign project_name = titlecase | strip | default: page.info_projects[remote_project].name -%}
+    {%- assign project_desc = project.description | default: page.info_projects[remote_project].description -%}
+    {%- assign language_tools = project.language | default: "" | split: ',' -%}
+    {%- assign additional_tools = page.info_projects[remote_project].tools | default: "" -%}
+    {%- assign combined_tools = language_tools | concat: additional_tools | uniq -%}
+    {%- assign project_tools = combined_tools -%}
+    {%- if project.html_url -%}
       {%- assign project_url  = project.html_url -%}
+    {%- else -%}
+      {%- assign project_url  = page.info_projects[remote_project].url -%}
     {%- endif -%}
 
 
