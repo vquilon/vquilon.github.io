@@ -20,9 +20,9 @@
     {%- endcapture -%}
 
     {%- assign project_type = "remote" -%}
-    {%- assign project_id   = project.name | default: remote_project -%}
+    {%- assign project_id   = remote_project -%}
     {%- assign project_img  = project.image | default: page.info_projects[remote_project].image -%}
-    {%- assign project_name = titlecase | strip | default: page.info_projects[remote_project].name -%}
+    {%- assign project_name = page.info_projects[remote_project].name | default: project.name -%}
     {%- assign project_desc = project.description | default: page.info_projects[remote_project].description -%}
     {%- assign language_tools = project.language | default: "" | split: ',' -%}
     {%- assign additional_tools = page.info_projects[remote_project].tools | default: "" -%}

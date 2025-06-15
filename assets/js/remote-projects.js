@@ -66,7 +66,7 @@ async function read_rest_api(repo, endpoint) {
   headers= {
     "Accept": "application/vnd.github.mercy-preview+json"
   };
-  return await make_fetch(uri=`https://api.github.com/repos/${final_endpoint}`, query=query, headers=headers);
+  return await make_fetch(uri=`https://api.github.com/repos/${final_endpoint}`, query={}, headers=headers);
 }
 
 async function read_graphql_api(query, variables) {
